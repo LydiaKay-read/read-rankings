@@ -2,7 +2,7 @@
 /* Plain CSS (no Tailwind) — drop this in src/App.css and replace the existing file. */
 
 :root {
-  --bg: #fff5f8;        /* very light pink */
+  --bg: #fcbdf4;        /* very light pink */
   --card: #ffffff;      /* card background */
   --accent: #ff6b9a;    /* main pink */
   --muted: #fbeef4;     /* muted pink */
@@ -33,12 +33,15 @@ body {
   justify-content: center;
   padding: 40px 20px;
 }
-
 .container {
-  width: 100%;
-  max-width: 720px;
-  text-align: left;
+  display: flex;            /* makes it a flex container */
+  flex-direction: column;   /* stack heading + table vertically */
+  align-items: center;      /* horizontally center children */
+  text-align: center;       /* center heading text */
+  width: auto;              /* shrink container to fit content */
 }
+
+
 
 .title {
   margin: 0 0 20px 0;
@@ -47,6 +50,7 @@ body {
   color: var(--accent);
   font-weight: 700;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .table-wrap {
@@ -56,6 +60,7 @@ body {
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   overflow: hidden;
+  margin: 0 auto;   
 }
 
 .rank-table {
@@ -63,17 +68,18 @@ body {
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .rank-table thead th {
   background: var(--muted);
   padding: 14px 18px;
-  text-align: left;
+  text-align: center;   /* change left → center */
   font-weight: 600;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 18px;
 }
+
 
 .rank-table tbody tr {
   transition: background 160ms ease, transform 160ms ease;
