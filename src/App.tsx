@@ -10,6 +10,12 @@ export default function App() {
     { id: 3, firstName: 'Nic', lastName: 'Grinch', height: '4ft 3', sex: 'Lady boy' },
   ];
 
+  const personalityTraits = [
+    { userId: 1, dressSense: 10, basicBitchLevel: 0, wrestling: 9, humour: 8},
+    { userId: 2, dressSense: 7, basicBitchLevel: 2, wrestling: 2, humour: 7},
+    { userId: 1, dressSense: 7, basicBitchLevel: 10, wrestling: 7, humour: 7},
+  ]
+
   return (
     <div className="app-root">
       <main className="container">
